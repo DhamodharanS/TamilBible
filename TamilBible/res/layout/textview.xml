@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_screen_bg"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+	android:id="@+id/layout1"
+	android:layout_width="fill_parent"
+    android:layout_height="50dp"
+     >
+		
+		<TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="TITLE"
+        android:layout_gravity="center"
+        />
+		
+		
+		<SeekBar
+		    android:id="@+id/seekBar1"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    />
+
+		<Button
+		    android:id="@+id/btnup"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_gravity="center"
+		    android:layout_marginLeft="20dp"
+		    android:text="Next"
+		    android:textSize="12dp" />
+
+		<Button
+		    android:id="@+id/btndown"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_gravity="center"
+		    android:layout_marginLeft="20dp"
+		    android:text="Prev"
+		    android:textSize="12dp" />
+    </LinearLayout>
+
+	
+	<ScrollView 
+	    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/layout1" >
+    
+	<LinearLayout
+	android:id="@+id/layout2"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/layout1" 
+     >
+		
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#FFFFFF"
+        android:text="TEXTVIEW"
+        
+        />
+
+	
+    </LinearLayout>
+    
+	</ScrollView>
+</RelativeLayout>
